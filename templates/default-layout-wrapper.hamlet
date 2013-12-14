@@ -25,9 +25,10 @@ $newline never
     <body>
         <div class="container">
             <header>
-            <div id="main" role="main">
-              ^{pageBody pc}
-            <footer>
+            <div id="wrap">
+                <div id="main" role="main" class="container clear-top">
+                  ^{pageBody pc}
+            <footer class="footer">
                 #{extraCopyright $ appExtra $ settings master}
 
         $maybe analytics <- extraAnalytics $ appExtra $ settings master
