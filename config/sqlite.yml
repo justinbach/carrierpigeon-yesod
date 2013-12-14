@@ -1,0 +1,20 @@
+Default: &defaults
+  database: carrierpigeon.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: carrierpigeon_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: carrierpigeon_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: carrierpigeon_production.sqlite3
+  poolsize: 100
+  <<: *defaults
